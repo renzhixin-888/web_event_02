@@ -22,3 +22,23 @@ html,body{
     height: 60px;
     background: url("/assets/images/login_title.png") no-repeat center;
 }
+
+.layui-form{
+    padding: 0 30px;   
+}
+
+.links{
+   display: flex;
+   justify-content: flex-end;
+   font-size: 12px; 
+}
+.layui-form-item{
+    position: relative;
+}
+.layui-icon{
+    position: absolute;
+    padding: 10px 10px;
+}
+.layui-form-item input{
+    padding-left: 32px;
+}
