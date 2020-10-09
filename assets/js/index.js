@@ -1,6 +1,6 @@
 $(function () {
     getUserInfo();
-    
+
     // 提取layer
     var layer = layui.layer;
     // 给退出设置点击事件
@@ -22,12 +22,12 @@ function getUserInfo() {
         method: 'GET',
         url: '/my/userinfo',
         success: function (res) {
-            console.log(res)
+            // console.log(res)
             // 若获取不成功，返回后台传输过来的信息
             if (res.status !== 0) {
                 return layui.msg(res.message)
             }
-
+            // console.log(res);
             // 若成功则渲染页面
             randerAvatar(res.data)
         }
@@ -51,6 +51,6 @@ function randerAvatar(user) {
         $('.layui-nav-img').hide();
         // 文本为名称的第一个元素
         var first = name[0].toUpperCase();
-        $('.user-avatar').show().html();
+        $('.user-avatar').show().html(first);
     }
 }
