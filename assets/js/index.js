@@ -25,7 +25,7 @@ function getUserInfo() {
             // console.log(res)
             // 若获取不成功，返回后台传输过来的信息
             if (res.status !== 0) {
-                return layui.msg(res.message)
+                return layer.msg(res.message)
             }
             // console.log(res);
             // 若成功则渲染页面
